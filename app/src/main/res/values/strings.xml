@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Parking</string>
+    <string name="license_plate">ทะเบียนรถ</string>
+    <string name="brand">ยี่ห้อรถ</string>
+    <string name="name_driver">ชื่อเจ้าของรถ</string>
+    <string name="button_update">ยืนยันการจอง</string>
+    <string name="button_cancel">ยกเลิกการจอง</string>
+    <string name="car_parking_text">Car Parking</string>
+</resources>
