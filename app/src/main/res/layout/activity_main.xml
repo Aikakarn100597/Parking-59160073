@@ -5,7 +5,7 @@
 
     <data>
         <variable
-                name="myName"
+                name="car"
                 type="com.example.parking.Car" />
     </data>
 
@@ -33,6 +33,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/roboto"
             android:hint="@string/license_plate"
+            android:text="@={car.license_plate}"
             android:layout_marginBottom="@dimen/layout_margin"/>
     <TextView
             android:id="@+id/license_text"
@@ -143,27 +144,43 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:background="#CE59D343"
-            android:text="ว่าง"/>
+            android:hint="ว่าง"
+            android:text="@={car.license_plate}"/>
     <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/parking2_text" android:fontFamily="@font/roboto"
-            app:layout_constraintStart_toEndOf="@+id/parking1_text" app:layout_constraintHorizontal_bias="0.5"
+            android:id="@+id/parking2_text"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintStart_toEndOf="@+id/parking1_text"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toStartOf="@+id/parking3_text"
             style="@style/NameStyle"
-            android:paddingTop="@dimen/layout_padding" android:paddingBottom="@dimen/layout_padding"
-            android:layout_marginTop="@dimen/layout_margin" app:layout_constraintTop_toBottomOf="@+id/car_parking_text"
-            android:textAlignment="center" android:background="#CE59D343" android:text="ว่าง"/>
+            android:paddingTop="@dimen/layout_padding"
+            android:paddingBottom="@dimen/layout_padding"
+            android:layout_marginTop="@dimen/layout_margin"
+            app:layout_constraintTop_toBottomOf="@+id/car_parking_text"
+            android:textAlignment="center"
+            android:background="#CE59D343"
+            android:hint="ว่าง"
+            android:text="@={car.license_plate}"/>
     <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/parking3_text" android:fontFamily="@font/roboto"
-            app:layout_constraintStart_toEndOf="@+id/parking2_text" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBaseline_toBaselineOf="@+id/parking2_text"
-            style="@style/NameStyle" android:paddingTop="@dimen/layout_padding"
-            android:paddingBottom="@dimen/layout_padding" android:textAlignment="center"
-            android:layout_marginEnd="16dp" android:layout_marginStart="16dp" android:background="#CE59D343"
-            android:text="ว่าง"/>
+            android:id="@+id/parking3_text"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintStart_toEndOf="@+id/parking2_text"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/parking2_text"
+            style="@style/NameStyle"
+            android:paddingTop="@dimen/layout_padding"
+            android:paddingBottom="@dimen/layout_padding"
+            android:textAlignment="center"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:background="#CE59D343"
+            android:hint="ว่าง"
+            android:text="@={car.license_plate}"/>
     <TextView
             android:text="@string/car_parking_text"
             android:layout_width="0dp"
